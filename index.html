@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5/Canvas/Javascript tower defense game</title>
+	<meta name="description" content="A tower defense game made with JavaScript and Canvas.">
+</head>
+<body>
+
+	<canvas id='canvas' class='canvas' width='1080px' height='600px' style='border:1px solid #000;'>Looks like HTML% canvas is turned off. Sorry, this tower defense game needs canvas to work</canvas>
+	<container class="towers-container">
+		<div class='tower' onclick='changeTower(0);'>
+			<h2 class="element-name">Water</h2>
+			<br>
+			Range: med
+			<br>
+			Damage: med
+			<br>
+			Rate: med
+			<br>
+			Cost: 50
+		</div>
+		<div class='tower' onclick='changeTower(1);'>
+			<h2 class="element-name">Wood</h2>
+			<br>
+			Range: long
+			<br>
+			Damage: med
+			<br>
+			Rate: high
+			<br>
+			Cost: 75 
+		</div>
+		<div class='tower' onclick='changeTower(2);'>
+			<h2 class="element-name">Fire</h2>
+			<br>
+			Range: short
+			<br>
+			Damage: high
+			<br>
+			Rate: med
+			<br>
+			Cost: 75 
+		</div>
+		<div class='tower' onclick='changeTower(3);'>
+			<h2 class="element-name">Earth</h2>
+			<br>
+			Range: short
+			<br>
+			Damage: high
+			<br>
+			Rate: med
+			<br>
+			Cost: 75 
+		</div>
+		<div class='tower' onclick='changeTower(4);'>
+			<h2 class="element-name">Metal</h2>
+			<br>
+			Range: short
+			<br>
+			Damage: high
+			<br>
+			Rate: med
+			<br>
+			Cost: 75 
+		</div>
+	</container>
+<div class="scoreboard">
+	Attackers Score: <span id='attackersScore'>0</span>
+	<span class='right'>Money: <span id='money'>250</span></span>
+	<br>
+	Attackers Stopped: <span id='stopped'>0</span>
+	Total spent: <span id='spent'>0</span>
+</div>
+<p>
+5 different towers, 40 different attacker types. Attackers get stronger as game progresses. 
+</p>
+	<script type='text/javascript' src='mainLoop.js'></script>
+	<script type='text/javascript' src='attackerUnits.js'></script>
+	<script type='text/javascript' src='towerUnits.js'></script>
+	<script type='text/javascript' src='bullets.js'></script>
+	<script type='text/javascript' src='mouseClick.js'></script>
+	<link rel="stylesheet" href="styles.css" />
+</body>
+</html>

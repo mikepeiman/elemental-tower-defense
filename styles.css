@@ -1,0 +1,40 @@
+.canvas {
+	background: black; /*url(tower_background.png);*/
+	max-height: 95vh;
+}
+
+.scoreboard {
+	width:  38%;
+	border: 5px solid gold;
+	padding: 10px;
+}
+.spacer {
+	height:  37vh;
+}
+.tower {
+	border:  5px solid grey;
+	border-radius: 50%;
+	padding:  2.5em;
+	margin:  1em;
+
+}
+.towers-container {
+	display:  flex;
+	flex-direction: row;
+}
+
+.page-section {
+	display:  flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.game-canvas-section {
+	align-self:  center;
+}
+.towers-select-section {
+	align-self:  center;
+}
+h1 {
+	font-size:  150%;
+	font-family: 'monospace';
+}
